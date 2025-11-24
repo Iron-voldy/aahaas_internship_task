@@ -1,12 +1,19 @@
 {
   "permissions": {
     "allow": [
-      "Bash(pip install:*)",
-      "Bash(python:*)",
-      "Bash(git init:*)",
-      "Bash(git remote add:*)",
-      "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(cmd /c \"where composer\" 2)",
+      "Bash(cmd /c \"composer --version\" 2)",
+      "Bash(cmd.exe /c \"C:\\xampp\\php\\php.exe -v\")",
+      "Bash(powershell.exe -Command \"& ''C:\\xampp\\php\\php.exe'' -v\")",
+      "Bash(powershell.exe -Command \"composer --version\")",
+      "Bash(powershell.exe -Command \"Invoke-WebRequest -Uri ''https://getcomposer.org/download/latest-stable/composer.phar'' -OutFile ''C:\\Users\\LapMart\\Downloads\\Asshas_internship_project\\composer.phar''\")",
+      "Bash(powershell.exe -Command \"& ''C:\\xampp\\php\\php.exe'' ''C:\\Users\\LapMart\\Downloads\\Asshas_internship_project\\composer.phar'' --version\")",
+      "Bash(powershell.exe:*)",
+      "Bash(git reset:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss init -p)",
+      "Bash(npm exec:*)"
     ],
     "deny": [],
     "ask": []
